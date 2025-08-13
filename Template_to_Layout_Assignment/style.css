@@ -1,0 +1,684 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main-container {
+    width: 100%;
+    background-color: #003a3a;
+    scroll-behavior: smooth;
+}
+header {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    margin-top: 4em;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    padding-left: 30%;
+}
+nav .logo {
+    padding-right: 3em;
+}
+.navlist ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.navlist ul li {
+    display: inline-block;
+    padding: 1.4em;
+}
+.navlist ul li a {
+    font-family: "Roboto Condensed";
+    font-weight: 800;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #003a3a;
+}
+/* Group 1 Styles */
+.group1 {
+    position: relative;
+    z-index: 1;
+    height: 1000px;
+    background-image: url('./static/Group1/Group1_bg_image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+.group1-title {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+.group1-title h1 {
+    font-family: "BioRhyme Expanded";
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: bold;
+    color: #003a3a;
+    text-shadow: 1px 1px 15px grey;
+}
+.group1-title h1 span {
+    color: white;
+}
+.group1-text {
+    position: absolute;
+    width: 20%;
+    top: 55%;
+    right: 23%;
+    max-width: 15%;
+}
+.group1-text p {
+    font-family: "BioRhyme";
+    font-size: 2em;
+    color: #003a3a;
+    font-weight: 700;
+    line-height: 1.2;
+}
+button {
+    margin-top: 2.5em;
+    padding: 1em 2em;
+    background-color: #003a3a;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/* Group 2 Styles */
+.group2 {
+    width: 100%;
+    height: 890px;
+    background-image: url('./static/Group2/Design1.svg');
+    background-repeat: no-repeat; 
+    background-position-y: 10%;
+    background-size: contain;
+}
+.diagonal-line {
+    width: 100%;
+}
+.design2 {
+    position:absolute;
+    z-index: auto;
+    top: 80%;
+    transform: rotate(3deg);
+}
+.image1-shape{
+    position: relative;
+    z-index: 2;
+    margin: 5em;
+    width: 800px;
+    height: 535px;
+    background-image: url('./static/Group2/image1.png');
+}
+.image2-shape {
+    position: absolute;
+    z-index: 3;
+    margin: -23% 20%;
+    width: 650px;
+    height: 535px;
+    background-image: url('./static/Group2/image2.png');
+}
+.group2-title {
+    position: absolute;
+    z-index: 3;
+    transform: translateY(-32.2rem);
+    left: 53%;
+}
+.group2-title h1 {
+    font-family: "BioRhyme Expanded";
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 1000;
+    color: white;
+    text-shadow: 1px 1px 20px black;
+}
+.group2-title h1 span{
+    color: #f5c4c3;
+}
+.group2-text {
+    position: absolute;
+    z-index: 3;
+    width: 20%;
+    transform: translateY(-300px);
+    right: 10%;
+    max-width: 16%;
+}
+.group2-text p{
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    color: white;
+    font-size: 1.8em;
+}
+.group2-button{
+    border: 1px solid white;
+    margin-top: 5em;
+}
+/* Group 3 Styles */
+.group3 {
+    width: 100%;
+    height: 950px;
+    background-image: url('./static/Group3/Shape.png');
+    background-repeat: no-repeat; 
+    background-position-y: 10%;
+    background-size: cover;
+}
+.group3-title{
+    text-align: center;
+    padding-top: 5em;
+}
+.group3-title h1{
+    font-family: "BioRhyme Expanded";
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5em;
+    color: #003a3a;
+}
+.group3-title h1 span{
+    color: white;
+}
+.group3-title p{
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    margin-top: 0.5em;
+    font-size: 2em;
+}
+.group3-cards-container{
+    width: 95%;
+    height: 710px;
+    margin: 3.5em auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards{
+    width: 440px;
+    height: 688px;
+}
+.card1-img{
+    width: 430px;
+    height: 400px;
+    background-image: url('./static/Group3/img1.png');
+    background-repeat: no-repeat;
+}
+.card2-img{
+    width: 430px;
+    height: 400px;
+    background-image: url('./static/Group3/img2.png');
+    background-repeat: no-repeat;
+}
+.card3-img{
+    width: 430px;
+    height: 400px;
+    background-image: url('./static/Group3/img3.png');
+    background-repeat: no-repeat;
+}
+.cards-text{
+    height: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.cards-text h3{
+    font-family: "BioRhyme";
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #003a3a;
+}
+.cards-text p{
+    font-family: "Roboto Condensed";
+    font-size: 1.3em;
+    max-width: 95%;
+}
+.cards-text a{
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 800;
+    font-family: "BioRhyme";
+    color: #003a3a;
+    text-decoration: underline;
+}
+/* Group 4 Styles */
+.group4{
+    height: 1030px;
+    width: 100%;
+    background-color: #003a3a;
+    background-image: url('./static/Group2/Design2.svg');
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position-y: -750%;
+}
+.group4-design1 {
+    position: absolute;
+    z-index: auto;
+    transform: translateY(100px);
+    rotate: 4deg;
+}
+.group4-design2 {
+    width: 100%;
+    position: absolute;
+    z-index: auto;
+    transform: translateY(440px);
+}
+.group4-img1 {
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    background-image: url('./static/Group4/main.png');
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: hard-light;
+    filter: grayscale(1);
+    background-color: #003a3a;
+}
+.group4-img1-text{
+    text-align: center;
+    padding-top: 3em;
+    color: #fff;
+    text-shadow: 1px 1px 10px grey;
+}
+.group4-img1 h1{
+    font-family: "BioRhyme Expanded";
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 3em;
+}
+.group4-img1 p{
+    font-family:"Roboto Condensed";
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.group4-item-images {
+    width: 73%;
+    height: 500px;
+    position: absolute;
+    z-index: 4;
+    transform: translateY(402px);
+    left: 14%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+    gap: 2em;
+    align-content: space-between;
+}
+.group4-shape {
+    height: 761px;
+    width: 65%;
+    position: absolute;
+    z-index: 4;
+    background-image: url('./static/Group3/Shape.png');
+    transform: translateY(270px);
+    left: 18%;
+}
+.group4-menu-title h1{
+    text-align: center;
+    font-family: "BioRhyme Expanded";
+    color: #003a3a;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2em;
+    padding-top: 0.8em;
+}
+.group4-menu-container{
+    width: 100%;
+    height: 66%;
+    position: absolute;
+    transform: translateY(36px);   
+    padding: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:0 2px;
+    text-align: left;
+}
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3em;
+    transform: translateY(-10px);
+    padding-left: 2em;
+}
+.right-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+    transform: translateY(-10px);
+    padding-right: 2em;
+    align-items: flex-end;
+}
+.menu-text{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 50%;
+}
+.group5{
+    height: 800px;
+    width: 100%;
+    background-color: white;
+}
+.group5-title{
+    text-align: center;
+}
+.group5-title h1{
+    font-family: "BioRhyme Expanded";
+    text-transform: uppercase;
+    color: #f5c4c3;
+    font-size: 2.5em;
+    padding-top: 60px;
+}
+.group5-title p{
+    font-family: "Roboto Condensed";
+    color: #003a3a;
+    font-size: 2.3em;
+    padding-top: 20px;
+}
+.chefs-card-container{
+    width: 70%;
+    height: 550px;
+     margin: 3.5em auto;
+    display: flex;
+    justify-content: space-around;
+}
+.chef-cards{
+    height: 500px;
+    width: 275px;
+}
+.chef1-img{
+    height: 400px;
+    width: 100%;
+    background-image: url('./static/Group5/chef1.png');
+}
+.chef2-img{
+    height: 400px;
+    width: 100%;
+    background-image: url('./static/Group5/chef2.png');
+}
+.chef3-img{
+    height: 400px;
+    width: 100%;
+    background-image: url('./static/Group5/chef3.png');
+}
+.chef-card-text{
+    text-align: center;
+}
+.chef-card-text h3{
+    color: #003a3a;
+    font-family: "BioRhyme";
+    font-size: 1.5em;
+    margin: 30px;
+    font-weight: 600;
+}
+.chef-card-text p{
+    color: grey;
+    font-family: "Roboto Condensed";
+    font-size: 1.3em;
+    margin: 30px;
+    font-weight: 600;
+}
+.group6{
+    height: 750px;
+    width: 100%;
+    padding-top: 3em;
+}
+.group6-title{
+    text-align: center;
+    padding-top: 2.5em;
+    color: white;
+}
+.group6-title h1{
+    font-family: "BioRhyme Expanded";
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+.group6-title h1 span{
+    color: #f5c4c3;
+}
+.group6-title p{
+    font-family: "Roboto Condensed";
+    font-size: 2em;
+}
+.group6-content{
+    display: flex;
+    margin-top: 5em;
+    width: 100%;
+}
+.left{
+    width: 50%;
+    height: 100%;
+}
+.right{
+    width: 50%;
+    height: 100%;
+}
+.reservation-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 130px;
+    margin-bottom: 40px;
+}
+.form-row{
+    display: flex;
+    gap: 130px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+}
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+}
+input,select{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #fff;
+    color: #000;
+}
+.btn {
+    background-color: #f4c3cc;
+    color: #000;
+    border: none;
+    padding: 10px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 1.6em;
+}
+.description{
+    max-width: 500px;
+    margin: 0 auto;
+    color: #d1d1d1;
+    font-size: 1.4em;
+    line-height: 1.6;
+}
+.group7{
+    height: 670px;
+    width: 100%;
+    background-color: #f4c3cc;
+}
+.group7-design2{
+    position: absolute;
+    z-index: auto;
+    width: 100%;
+    transform: translateY(-450px);
+}
+.group7-design1{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+}
+.group7-images{
+    width: 100%;
+    height: 200%;
+}
+.group7-img1{
+    position: absolute;
+    z-index: 4;
+    transform: translateY(-175px);
+}
+.group7-img2{
+    position: absolute;
+    z-index: 5;
+    transform: translateX(900px);
+}
+.group7-img2 img{
+    transform: translateY(-150px);
+}
+.group7-text{
+    max-width:25%;
+    text-align: end;
+    position: relative;
+    z-index: 5;
+    transform: translateY(-1080px);
+}
+.group7-text h2{
+    font-family: "BioRhyme Expanded";
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #003a3a;
+    text-align: end;
+    transform: translateX(1000px);
+}
+.group7-text p{
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    font-size: 1.4em;
+    color: grey;
+    text-align: end;
+    transform: translateX(1000px);
+}
+.group8{
+    width: 100%;
+    height: 800px;
+}
+.group8-title{
+    text-align: center;
+    padding-top: 6em;
+}
+.group8-title h2{
+    font-family: "BioRhyme Expanded";
+    font-size: 2.5em;
+    font-weight: 900;
+    color: white;
+}
+.group8-cards{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 75%;
+    margin: 2em auto;
+}
+.cards{
+    width: 425px;
+    height: 600px;
+}
+
+.card1-image{
+    width:425px;
+    height: 330px;
+    background-color: white;
+    background-image: url('./static/Group8/img1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card2-image{
+    width:425px;
+    height: 330px;
+    background-color: white;
+    background-image: url('./static/Group8/img2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card3-image{
+    width:425px;
+    height: 330px;
+    background-color: white;
+    background-image: url('./static/Group8/img3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.group8-cards-text{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:1em 1em;
+}
+.group8-cards-text h2{
+    font-family: "BioRhyme";
+    font-size: 1.6em;
+    font-weight: 900;
+    color: #f5c4c3;
+}
+.group8-cards-text p{
+    font-family: "Roboto Condensed";
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #dfe6e6;
+}
+#light-text{
+    font-size: 1em;
+    font-weight: 300;
+    color: #f5c4c3;
+}
+footer{
+    height: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-sections{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: space-evenly;
+}
+footer h1{
+    font-family: "BioRhyme Expanded";
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #f5c4c3;
+}
+footer h1 span{
+    color: #fff;
+}
+.footer-sections ul li {
+    list-style-type: none;
+    padding: 0.1em;
+}   
+.footer-sections ul li a{
+    font-family: "Roboto Condensed";
+    color: white;
+    font-size: 1.4em;
+    padding: 1em;
+    font-weight: 700;
+    text-decoration: none;
+}
+.footer-sections p{
+    font-family: "Roboto Condensed";
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-decoration: none;
+}
